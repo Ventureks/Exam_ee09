@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl7.css">
+    <title>Galeria</title>
+
+        <script>
+           function klik(a)
+           {
+                document.querySelector('#glowny img').src=a;
+           }
+        </script>
+
+        <script>
+        {
+            var i=0;
+            function klik1()
+            {
+                if(i==0)
+                {
+                    document.querySelector('#prawy img').src = "icon-off.png";
+                    i++;
+                } else {
+                    document.querySelector('#prawy img').src = "icon-on.png";
+                    i--;
+                }
+                
+            }
+        }
+        </script>
+</head>
+<body>
+
+
+
+
+
+    <div id="baner">
+
+        <h2>Galeria miejsc ciekawych</h2>
+
+    </div>
+    <div id="glowny">
+
+    <img src="lanzarotte.jpg" alt="galeria">
+
+    </div>
+
+    <div id="lewy">
+
+    <h3>Przeglądaj zdjęcia</h3>
+    <img src="lanzarotte.jpg" alt="lanzarotte" onclick="klik('lanzarotte.jpg')">
+    <img src="pekin.jpg" alt="pekin" onclick="klik('pekin.jpg')">
+    <img src="serengeti.jpg" alt="serengeti0" onclick="klik('serengeti.jpg')">
+    <img src="wenecja.jpg" alt="wenecja" onclick="klik('wenecja.jpg')">
+    <img src="tajlandia.jpg" alt="tajlandia" onclick="klik('tajlandia.jpg')">
+
+    </div>
+
+    <div id="prawy">
+
+    <h3>Obrazy w naszej galerii</h3>
+        <table>
+    <tr>
+        <td>Europa</td><td>Azja</td><td>Afryka</td>
+    </tr>
+    <tr>
+        <td>2</td><td>2</td><td>1</td>
+    </tr>
+        </table>
+    
+    <p>Polub nas</p><img src="icon-off.png" id="ikonka" onclick="klik1('icon-on.png')">
+    <a href="https://pixabay.com">Odkryj więcej zdjęć</a>
+    </div>
+    <div id="stopka">
+    Autor: 0000000000000
+    </div>
+</body>
+</html>
